@@ -1,17 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  
 
 // Components
 import Navbar from './components/Navbar'
-
-import About from './components/About'
-
-import Testimonials from './components/Testimonials'
-
-import Hero from './components/Hero';
 import singin  from './pages';
+import Home from './components/Home';
 
 
 
@@ -26,11 +20,9 @@ function App() {
           <Navbar />
         </header>
         <body>
-          <Hero />
-          <About />
-          <Testimonials />
         <Routes>
-          <Route path='/' Component={singin} />
+          <Route path='/' Component={Home} />
+          <Route path='/sigin' Component={singin} />
         </Routes>
         </body>
       </Router>

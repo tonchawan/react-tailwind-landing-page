@@ -7,7 +7,7 @@ function Navbar() {
     const navigate = useNavigate();
     const test1 = e => {
         e.preventDefault();
-        navigate("/test1");
+        navigate("/sigin");
     
       };
     return (
@@ -25,9 +25,6 @@ function Navbar() {
                 <a href='/' className='signin-button' >Sign in</a>
                 </div>
                 </div>
- 
-
-  
             </div>   
         </nav>            
     )
